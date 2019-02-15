@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BEER</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+  </head>
+	<body>
+
+<div class="container">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Beer Bar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#" id="beers-btn">Beers <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="random-beer">Random Beer</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <br />
+  
+  <div class="row">
+    
+      <div class="col-md-12">
+        <nav class="navbar navbar-light bg-light" id="dropdown-lists">
+            
+            <div class="btn-group" id="page-size">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Page size
+                </button>
+                <div class="dropdown-menu" id="page-menu">
+                  <a class="dropdown-item" href="#">6</a>
+                  <a class="dropdown-item" href="#">9</a>
+                  <a class="dropdown-item" href="#">15</a>
+                </div>
+              </div>
+          <div class="btn-group" id="sort">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Sort by
+            </button>
+            <div class="dropdown-menu" id="sorting-menu">
+              <a class="dropdown-item" value = "Name A-Z" href="#">Name A-Z</a>
+              <a class="dropdown-item" value = "Name Z-A" href="#">Name Z-A</a>
+              <a class="dropdown-item" value = "Alcohol-asc" href="#">Alcohol % (asc)</a>
+              <a class="dropdown-item" value = "Alcohol-desc" href="#">Alcohol % (desc)</a>
+              <a class="dropdown-item" value = "Brewing-asc" href="#">Brewing (asc)</a>
+              <a class="dropdown-item" value = "Brewing-desc" href="#">Brewing (desc)</a>
+              <a class="dropdown-item" value = "Bitterness-asc" href="#">Bitterness (asc)</a>
+              <a class="dropdown-item" value = "Bitterness-desc" href="#">Bitterness (desc)</a>
+            </div>
+          </div>
+          
+        </nav>
+      </div>
+      <br />
+      <!-- pagination -->
+      <div class="row pagination">
+        <p id="showPage"></p>
+        <div class="col-md-12">
+          <nav aria-label="...">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="#">Previous</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+        </div>
+      </div>
+  
+    <div class="card welcome-card">
+      <div class="card-body">
+        <h5 class="card-title">Hello, this is Beer World</h5>
+        <p class="card-text">This is a simple beer page. You can get information on all kinds of beers.</p>
+        <p class="card-text"><small class="text-muted">Drink responsibly!</small></p>
+      </div>
+      <img src="img/beer-welcome.jpg" class="welcome-img" alt="picture of Beers">
+    </div>
+
+  </div>
+  <br />
+    <div id="beer-container">
+    </div>
+
+      </div>
+
+  <br/>
+	
+</div> -->
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="lib/script.js"></script>  
+</body>
+</html>
