@@ -31,7 +31,8 @@ const displayPlayer = (player) => {
     <button class="save">Save changes</button>
     </form>
     `);
-
+    
+    //attempt with POST method 
     $(".save").click(function (event) {
         event.preventDefault();
         const newPlayer = {};
